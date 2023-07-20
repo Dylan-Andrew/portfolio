@@ -6,6 +6,34 @@
     display: flex !important;
 }
 
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .tech {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.9px) {
+    .tech {
+        width: 55px;
+        height: 55px;
+        margin-top: 10px;
+    }
+    .tech-grid {
+        display: block;
+    }
+}
+
+@media (max-width: 767.9px) {
+    .tech {
+        width: 52px;
+        height: 52px;
+    }
+    .tech-grid {
+        display: block;
+    }
+}
+
 @media (min-width: 460px) and (max-width: 1023.9px) {
     .res-avatar {
         margin: 3rem auto;

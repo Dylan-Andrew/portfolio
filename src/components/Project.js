@@ -20,27 +20,27 @@ export default function Projects() {
                     <Typography
                     variant="h1"
                     color="white"
-                    className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                    className="mb-4 text-lg sm:text-2xl lg:text-4xl"
                     >
                     {project.title}
                     </Typography>
                     <Typography
                     variant="lead"
                     color="white"
-                    className="mb-12 opacity-80"
+                    className="mb-8 opacity-80 text-base sm:text-sm md:text-lg"
                     >
                     {project.description}
                     </Typography>
                     <Typography
                     variant="h4"
                     color="white"
-                    className="mb-2 opacity-80">
+                    className="mb-2 opacity-80 text-xl">
                       Technologies utilisées
                     </Typography>
                     <div className="flex justify-center">
-                      <div className="my-10 grid grid-cols-4 gap-2">
+                      <div className="tech-grid my-5 lg:my-10 grid grid-cols-4 gap-2">
                         {project.technologies.map((technology) => (
-                          <Avatar src={technology.logo} alt={technology.name} title={technology.name} size="xxl" variant="rounded" className="mx-10 transition duration-300 ease-in-out transform hover:scale-105"/>
+                          <Avatar src={technology.logo} alt={technology.name} title={technology.name} size="xxl" variant="rounded" className="m-5 md:mx-10 transition duration-300 ease-in-out transform hover:scale-105 tech"/>
                         ))}
                       </div>
                     </div>
