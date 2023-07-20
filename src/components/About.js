@@ -15,13 +15,13 @@ export default function About() {
             className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 h-full w-full place-items-center bg-black/75 lg:grid lg:grid-cols-6 gap-4">
-              <div className="about-avatar w-1/2 lg:w-3/4 flex justify-center lg:col-span-2 lg:ml-auto my-avatar">
+              <div className="res-avatar w-1/2 lg:w-3/4 flex justify-center lg:col-span-2 lg:ml-auto my-avatar">
                   <img
                       src="/images/Dylan_Andrew.png"
                       alt=""
                       className="w-1/4 lg:w-3/4 h-auto rounded-full"/>
               </div>
-              <div className="about-content w-3/4 md:w-3/4 lg:col-span-4">
+              <div className="res-content w-3/4 md:w-3/4 lg:col-span-4">
                   <Typography
                   variant="h2"
                   color="white"

@@ -7,25 +7,25 @@
 }
 
 @media (min-width: 460px) and (max-width: 1023.9px) {
-    .about-avatar {
+    .res-avatar {
         margin: 3rem auto;
     }
-    .about-content {
+    .res-content {
         margin: auto;
     }
 }
 
 @media (max-width: 459.9px) {
-    .about-avatar {
+    .res-avatar {
         margin: 1.5rem auto;
     }
-    .about-content {
+    .res-content {
         margin: auto;
     }
 }
 
 @media (max-width: 360px) {
-    .about-avatar {
+    .res-avatar {
         margin: 1rem auto;
         width: 100%;
     }

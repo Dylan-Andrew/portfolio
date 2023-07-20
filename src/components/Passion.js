@@ -14,15 +14,15 @@ export default function Passion() {
                         alt="gallery"
                         className="h-full w-full object-cover"
                         />
-                        <div className="absolute inset-0 h-full w-full place-items-center bg-black/75 grid grid-cols-5 gap-4">
-                            <figure className="w-3/4 flex justify-center col-span-2 ml-auto">
+                        <div className="absolute inset-0 h-full w-full place-items-center bg-black/75 lg:grid lg:grid-cols-5 gap-4">
+                            <figure className="res-avatar w-1/2 lg:w-3/4 flex justify-center lg:col-span-2 lg:ml-auto">
                                 <img
                                     className="h-full w-full rounded-lg"
                                     src={passion.logo}
                                     alt="nature image"
                                 />
                             </figure>
-                            <div className="w-3/4 text-center md:w-3/4 col-span-3">
+                            <div className="res-content w-3/4 text-center md:w-3/4 lg:col-span-3">
                                 <Typography
                                 variant="h1"
                                 color="white"
