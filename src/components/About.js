@@ -32,7 +32,7 @@ export default function About() {
                   <Typography
                   variant="lead"
                   color="white"
-                  className="mb-4 text-justify sm:text-sm md:text-lg">
+                  className="mb-4 text-justify text-base sm:text-sm md:text-lg">
                   Passionné à la fois par les jeux vidéo, notamment DOTA 2, et par les sports automobiles, 
                   je suis un développeur informatique titulaire d'une double licence obtenue à l'<a href="https://esti.mg/accueil" className="text-blue-600 visited:text-purple-600" title="Ecole Supérieure des Technologies de l'Information">ESTI</a> et à 
                   l'<a href="https://www.u-pec.fr/" className="text-blue-600 visited:text-purple-600" title="Université Paris-Est Créteil">UPEC</a>. 
