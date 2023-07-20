@@ -20,7 +20,22 @@ export default function Skills() {
     centerPadding: '60px',
     slidesToShow: 3,
     autoplay: true,
-    autoplaySpeed: 1500
+    autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 2,
+        }, 
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }, 
+      }
+    ],
+    variableWidth: true,
   };
 
   return (    
