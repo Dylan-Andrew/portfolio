@@ -2,7 +2,7 @@ import React from "react";
 import { projects } from "../data";
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 import { FullpageSection } from '@ap.cx/react-fullpage';
-import Modal from "./ModalProject";
+import { Avatar } from "@material-tailwind/react";
 
 export default function Projects() {
   return (
@@ -31,17 +31,25 @@ export default function Projects() {
                     >
                     {project.description}
                     </Typography>
-                   
-
+                    <Typography
+                    variant="h4"
+                    color="white"
+                    className="mb-2 opacity-80">
+                      Technologies utilisées
+                    </Typography>
+                    <div className="flex justify-center">
+                      <div className="my-10 grid grid-cols-4 gap-2">
+                        {project.technologies.map((technology) => (
+                          <Avatar src={technology.logo} alt={technology.name} title={technology.name} size="xxl" variant="rounded" className="mx-10 transition duration-300 ease-in-out transform hover:scale-105"/>
+                        ))}
+                      </div>
+                    </div>
                     <div className="flex justify-center gap-2">
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                         <Button size="lg" color="white">
                             Explorer
                         </Button>
                       </a>
-                      <Button size="lg" color="white" variant="text">
-                          <Modal />
-                      </Button>
                     </div>
 
                 </div>

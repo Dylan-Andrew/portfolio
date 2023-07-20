@@ -10,35 +10,35 @@ export const sections = [
 export const skills = [
   {
     title:"Javascript",
-    logo:"./images/js.jpg",
+    logo:"./images/technologies/js.jpg",
   },
   {
     title:"React",
-    logo:"./images/React.png",
+    logo:"./images/technologies/React.png",
   },
   {
     title:"Vue.js",
-    logo:"./images/vue.png",
+    logo:"./images/technologies/vue.png",
   },
   {
     title:"Java",
-    logo:"./images/java.png",
+    logo:"./images/technologies/java.png",
   },
   {
     title:"MySQL",
-    logo:"./images/mysql.png",
+    logo:"./images/technologies/mysql.png",
   },
   {
     title:"Git",
-    logo:"./images/Git.png",
+    logo:"./images/technologies/Git.png",
   },
   {
     title:"Docker",
-    logo:"./images/docker.png",
+    logo:"./images/technologies/docker.png",
   },
   {
     title:"PHP",
-    logo:"./images/php.jpg",
+    logo:"./images/technologies/php.jpg",
   },
 ];
 
@@ -46,33 +46,58 @@ export const projects = [
     {
         title: "Recruter à Madagascar",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./images/Recruter.png",
+          "Recruter à Madagascar est la plateforme incontournable pour trouver les meilleurs talents à Madagascar. Elle facilite la mise en relation entre les entreprises et les candidats, favorisant ainsi le recrutement efficace et ciblé.",
+        image: "./images/projects/Recruter.png",
         link: "https://www.recruter-a-madagascar.com/",
+        technologies: [
+          { name: "PHP", logo: "./images/technologies/php.jpg" },
+          { name: "Javascript", logo: "./images/technologies/js.jpg" },
+          { name: "Wordpress", logo: "./images/technologies/wp.png" },
+          { name: "MySQL", logo: "./images/technologies/mysql.png" },
+        ]
       },
       {
-        title: "Femmes Entrepreneures d'Analamanga",
+        title: "FEA",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./images/FEA.png",
+          "Fea est le site incontournable pour les femmes entrepreneures d'Analamanga. Il offre un espace dédié pour promouvoir l'entrepreneuriat féminin, partager des expériences inspirantes et favoriser les échanges entre femmes leaders de la région.",
+        image: "./images/projects/FEA.png",
         link: "https://www.fea.mg/",
+        technologies: [
+          { name: "PHP", logo: "./images/technologies/php.jpg" },
+          { name: "Javascript", logo: "./images/technologies/js.jpg" },
+          { name: "Wordpress", logo: "./images/technologies/wp.png" },
+          { name: "MySQL", logo: "./images/technologies/mysql.png" },
+        ]
+      },
+      {
+        title: "Tripalio",
+        description:
+          "Tripalio est un site dédié à l'information sociale et économique en France. Il offre des actualités et des analyses pertinentes sur le monde du travail, les négociations collectives et les politiques sociales.",
+        image: "./images/projects/Tripalio.png",
+        link: "https://app.tripalio.fr/",
+        technologies: [
+          { name: "CSharp", logo: "./images/technologies/cs.png" },
+          { name: "Javascript", logo: "./images/technologies/js.jpg" },
+          { name: "Wordpress", logo: "./images/technologies/wp.png" },
+          { name: "MySQL", logo: "./images/technologies/mysql.png" },
+        ]
       },
 ];
 
 export const passions = [
   {
-    title: "The Beauty of NatureXX",
-    description: "It is not so much for its beauty that the forest makes a claim upon men&apos;s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+    title: "DOTA 2",
+    description: "Dota 2 est un  est un MOBA (Arène de bataille en ligne multijoueur) de renommée mondiale qui me passionne. Avec ses affrontements épiques et ses mécaniques de jeu complexes, il est acclamé comme l'un des titres les plus appréciés de l'e-sport, mettant en avant son aspect hautement stratégique qui exige une réflexion tactique pointue pour réussir.",
+    image: "./images/passions/Dotabg.png",
+    logo: "./images/passions/Dota.png",
+    link: "https://www.dota2.com/home",
+    profile: "https://www.dotabuff.com/players/471547277"
   },
   {
-    title: "The Beauty of Nature",
-    description: "It is not so much for its beauty that the forest makes a claim upon men&apos;s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-  },
-  {
-    title: "The Beauty of Nature",
-    description: "It is not so much for its beauty that the forest makes a claim upon men&apos;s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.",
-    image: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+    title: "Formula 1",
+    description: "La Formule 1 est ma passion ultime, et parmi les pilotes, mon admiration va tout particulièrement à Sebastian Vettel. Son talent, son style de conduite et ses multiples victoires ont fait de moi un fervent fan inconditionnel.",
+    image: "./images/passions/seb.jpg",
+    logo: "./images/passions/f1.png",
+    link: "https://www.formula1.com/"
   },
 ]

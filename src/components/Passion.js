@@ -18,7 +18,7 @@ export default function Passion() {
                             <figure className="w-3/4 flex justify-center col-span-2 ml-auto">
                                 <img
                                     className="h-full w-full rounded-lg"
-                                    src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+                                    src={passion.logo}
                                     alt="nature image"
                                 />
                             </figure>
@@ -38,12 +38,19 @@ export default function Passion() {
                                 {passion.description}
                                 </Typography>
                                 <div className="flex justify-center gap-2">
-                                <Button size="lg" color="white">
-                                    Explore
-                                </Button>
-                                <Button size="lg" color="white" variant="text">
-                                    Gallery
-                                </Button>
+                                <a href={passion.link} target="_blank" rel="noopener noreferrer">
+                                    <Button size="lg" color="white">
+                                        Explorer
+                                    </Button>
+                                </a>
+                                {
+                                    passion.profile && 
+                                    <a href={passion.profile} target="_blank" rel="noopener noreferrer">
+                                        <Button size="lg" color="white">
+                                            Mon profil
+                                        </Button>
+                                    </a>
+                                }
                                 </div>
                             </div>
                         </div>
