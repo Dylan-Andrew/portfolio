@@ -1,6 +1,9 @@
 import React from 'react';
-import { Button, Typography } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import { FullpageSection } from '@ap.cx/react-fullpage';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function About() {
   return (
@@ -11,25 +14,25 @@ export default function About() {
             alt="image 1"
             className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75 grid grid-cols-6 gap-4">
-              <div className="w-3/4 flex justify-center col-span-2 ml-auto">
+            <div className="absolute inset-0 h-full w-full place-items-center bg-black/75 lg:grid lg:grid-cols-6 gap-4">
+              <div className="about-avatar w-1/2 lg:w-3/4 flex justify-center lg:col-span-2 lg:ml-auto my-avatar">
                   <img
                       src="/images/Dylan_Andrew.png"
                       alt=""
-                      className="w-3/4 h-auto rounded-full"/>
+                      className="w-1/4 lg:w-3/4 h-auto rounded-full"/>
               </div>
-              <div className="w-3/4 md:w-3/4 col-span-4">
+              <div className="about-content w-3/4 md:w-3/4 lg:col-span-4">
                   <Typography
                   variant="h2"
                   color="white"
-                  className="mb-4"
+                  className="mb-4 text-lg sm:text-2xl lg:text-4xl"
                   >
                     Dylan Andrew RAZAFINTSALAMA
                   </Typography>
                   <Typography
                   variant="lead"
                   color="white"
-                  className="mb-4 text-justify">
+                  className="mb-4 text-justify sm:text-sm md:text-lg">
                   Passionné à la fois par les jeux vidéo, notamment DOTA 2, et par les sports automobiles, 
                   je suis un développeur informatique titulaire d'une double licence obtenue à l'<a href="https://esti.mg/accueil" className="text-blue-600 visited:text-purple-600" title="Ecole Supérieure des Technologies de l'Information">ESTI</a> et à 
                   l'<a href="https://www.u-pec.fr/" className="text-blue-600 visited:text-purple-600" title="Université Paris-Est Créteil">UPEC</a>. 
@@ -39,12 +42,19 @@ export default function About() {
                   en exploitant ma passion pour les technologies immersives et les mondes virtuels. Grâce à ma solide formation académique et à ma détermination, 
                   je suis prêt à relever de nouveaux défis et à contribuer activement à des projets innovants dans le domaine en constante évolution de la VR et des jeux vidéo.
                   </Typography>
-                  <a
-                  href="/pdf/CVDylanAndrew.pdf"
-                  download="CV-Dylan_Andrew.pdf"
-                  >
-                    <Button>Télécharger mon CV</Button>
-                  </a>
+                  <div className="grid grid-cols-2 flex justify-evenly about-icons">
+                    <a
+                    href="/pdf/CVDylanAndrew.pdf"
+                    download="CV-Dylan_Andrew.pdf"
+                    className="col-span-1 about-icon"
+                    title="CV Dylan Andrew"
+                    >
+                      <FontAwesomeIcon icon={faFileArrowDown} size="2xl" style={{ color: "white" }} />
+                    </a>
+                    <a href="https://www.linkedin.com/in/dylan-andrew-razafintsalama/" className="col-span-1 about-icon" title="LinkedIn Dylan Andrew">
+                      <FontAwesomeIcon icon={faLinkedin} size="2xl" style={{ color: "white" }} />
+                    </a>
+                  </div>
               </div>
             </div>
         </div>
