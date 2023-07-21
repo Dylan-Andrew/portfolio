@@ -9,7 +9,7 @@ import Fullpage, { FullPageSections, FullpageNavigation } from '@ap.cx/react-ful
 
 function App() {
   return (
-    <main className="body-font">
+    <main className="body-font bg-black">
       <Fullpage>
         <FullpageNavigation />
         <FullPageSections>
