@@ -18,7 +18,7 @@ export default function Contact() {
               <Input size="lg" color="indigo" label="Email" className="message"/>
               <Textarea color="indigo" label="Message" className="message"/>
             </div>
-            <Button color="red" variant="outlined" className="flew m-auto rounded-full mt-6">
+            <Button color="red" variant="outlined" className="flex m-auto rounded-full mt-6">
               Envoyer
             </Button>
           </form>
