@@ -6,6 +6,14 @@
     display: flex !important;
 }
 
+.message + label {
+    color: white !important;
+}
+
+.message{
+    color: white !important;
+}
+
 @media (min-width: 1024px) and (max-width: 1300px) {
     .tech {
         width: 60px;
