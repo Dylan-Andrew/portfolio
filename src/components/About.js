@@ -17,7 +17,7 @@ export default function About() {
             <div className="absolute inset-0 h-full w-full place-items-center bg-black/75 lg:grid lg:grid-cols-6 gap-4">
               <div className="res-avatar w-1/2 lg:w-3/4 flex justify-center lg:col-span-2 lg:ml-auto my-avatar">
                   <img
-                      src="/images/Dylan_Andrew.png"
+                      src="./images/Dylan_Andrew.png"
                       alt=""
                       className="w-1/4 lg:w-3/4 h-auto rounded-full"/>
               </div>
