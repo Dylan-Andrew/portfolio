@@ -18,7 +18,7 @@ function App() {
           <Skills  />
           <Projects />
           <Passion />
-          <Contact />
+          {/* <Contact /> */}
         </FullPageSections>
       </Fullpage>
     </main>

@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 import { FullpageSection } from '@ap.cx/react-fullpage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function About() {
   return (
@@ -42,7 +42,7 @@ export default function About() {
                   en exploitant ma passion pour les technologies immersives et les mondes virtuels. Grâce à ma solide formation académique et à ma détermination, 
                   je suis prêt à relever de nouveaux défis et à contribuer activement à des projets innovants dans le domaine en constante évolution de la VR et des jeux vidéo.
                   </Typography>
-                  <div className="grid grid-cols-2 flex justify-evenly about-icons">
+                  <div className="grid grid-cols-3 flex justify-evenly about-icons">
                     <a
                     href="/pdf/CVDylanAndrew.pdf"
                     download="CV-Dylan_Andrew.pdf"
@@ -53,6 +53,9 @@ export default function About() {
                     </a>
                     <a href="https://www.linkedin.com/in/dylan-andrew-razafintsalama/" className="col-span-1 about-icon" title="LinkedIn Dylan Andrew">
                       <FontAwesomeIcon icon={faLinkedin} size="2xl" style={{ color: "white" }} />
+                    </a>
+                    <a href="mailto:diix.andrew@gmail.com" className="col-span-1 about-icon" title="Envoyer un mail">
+                      <FontAwesomeIcon icon={faEnvelope} size="2xl" style={{ color: "white" }} />
                     </a>
                   </div>
               </div>
