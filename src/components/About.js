@@ -44,7 +44,7 @@ export default function About() {
                   </Typography>
                   <div className="grid grid-cols-3 flex justify-evenly about-icons">
                     <a
-                    href="/pdf/CVDylanAndrew.pdf"
+                    href="./pdf/CVDylanAndrew.pdf"
                     download="CV-Dylan_Andrew.pdf"
                     className="col-span-1 about-icon"
                     title="CV Dylan Andrew"
